@@ -25,4 +25,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 RUN mkdir /shared
 
+# For keeping composer cache
+ENV COMPOSER_HOME=/shared/.composer
+
 WORKDIR /shared
+
