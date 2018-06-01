@@ -24,7 +24,7 @@ bash-4.2# php hello.php
 
 ```
 
-## Web Application (With PHP Standalone Server)
+## Web Application (With PHP Built-in Web Server)
 
 Please build the docker image as well as the CLI case.
 
@@ -33,10 +33,10 @@ Please build the docker image as well as the CLI case.
 # Launch a container, exposing port 80 to the host (mapping it to port 10080 on the host).
 $ docker run -v `pwd`/shared:/shared -p 127.0.0.1:10080:80/tcp --rm -it php72-amzn2-sample bash
 
-# Start PHP Standalone server on the container.
+# Start PHP built-in web server on the container.
 bash-4.2# php -S 0.0.0.0:80
 
-# (From the host) sending a HTTP request to the container.
+# (From the host) sending a HTTP request to the server on the container.
 $ curl http://localhost:10080/hello.php
 
 ```
