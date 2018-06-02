@@ -11,7 +11,7 @@ You need to install [docker](https://www.docker.com/community-edition) first.
 ```bash
 
 # Clone this repository
-$ git clone https://github.com/lucheholdings/sample_php72_amzn2_docker; cd sample_php72_amzn2_docker
+$ git clone https://github.com/lucheholdings/sample_php72_amzn2_docker && cd sample_php72_amzn2_docker
 
 # Build a docker image.
 $ docker build . -t php72-amzn2-sample
